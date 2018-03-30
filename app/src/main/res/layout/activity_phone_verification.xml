@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/tab1_rcr_r1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="验证手机号"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <RelativeLayout
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back_background"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="返回"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+        </RelativeLayout>
+        <!--<RelativeLayout
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/back_background"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="注册"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+        </RelativeLayout>-->
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/phoneNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="16dp">
+
+            <TextView
+                android:id="@+id/loginNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+                android:text="手机号"
+                android:textSize="16dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/loginNameText"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/loginNameEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:hint="输入手机号"
+                    android:textColorHint="#eeeeee"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/get_code_click"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/code_button_background"
+                    android:textColor="@color/colorPrimary"
+                    android:text="发送验证码"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#e6e6e6" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/emile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="16dp">
+
+            <TextView
+                android:id="@+id/get_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+                android:text="验证码"
+                android:textSize="16dp" />
+
+            <RelativeLayout
+                android:layout_toRightOf="@+id/get_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp">
+
+                <EditText
+                    android:id="@+id/getCodeEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:maxLength="20"
+                    android:background="@null"
+                    android:textColorHint="#eeeeee"
+                    android:hint="手机收到的验证码" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#e6e6e6" />
+        </RelativeLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/verificationButton"
+        android:text="验  证"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>

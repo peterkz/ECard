@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_unclicked_background">
+    <RelativeLayout
+        android:id="@+id/label"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/line1"
+            android:layout_toLeftOf="@+id/titleText"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/qrcode_line1"/>
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的二维码"
+            android:textSize="20dp"
+            android:textColor="#333333"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:id="@+id/line2"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/qrcode_line2"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/nameRelative"
+        android:layout_below="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+        <ImageView
+            android:id="@+id/eCardPhoto"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/norm_avatar_icon"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/eCardPhoto"
+            android:layout_centerVertical="true">
+            <TextView
+                android:id="@+id/name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textSize="15dp"
+                android:text="名字" />
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_below="@+id/name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:layout_marginTop="12dp"
+                android:textSize="15dp"
+                android:text="职位" />
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/eCardShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="44dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/qrcode_share"/>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/qrImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/nameRelative"
+        />
+    <TextView
+        android:id="@+id/textViewQRImage"
+        android:layout_below="@+id/qrImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用e卡扫描保存"
+        android:layout_centerHorizontal="true"
+        android:textColor="#333333"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"/>
+    <View
+        android:id="@+id/view"
+        android:layout_below="@+id/textViewQRImage"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/line_gray" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_below="@+id/view"
+        >
+
+        <TextView
+            android:id="@+id/saveQR"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="保存"
+            android:textColor="@color/blueColor"
+            android:textSize="@dimen/text_size_16_sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/line_gray" />
+
+        <TextView
+            android:id="@+id/eCardTextShare"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="分享"
+            android:textColor="@color/blueColor"
+            android:textSize="@dimen/text_size_16_sp" />
+
+    </LinearLayout>
+</RelativeLayout>

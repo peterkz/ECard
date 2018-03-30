@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/tab1_rcr_r1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/titleColor">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="联系人分布"
+            android:textColor="#4b4b4b"
+            android:textSize="20dp" />
+
+        <RelativeLayout
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/contact_back_background">
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="返回" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/error"
+        android:text="加载失败"
+        android:textSize="16dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/myProgressBar"
+        android:visibility="visible"
+        android:layout_below="@id/label"
+        android:layout_width="match_parent"
+        android:layout_height="5sp"
+        />
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

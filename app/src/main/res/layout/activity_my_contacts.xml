@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/searchR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label">
+
+        <RelativeLayout
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="26dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/card_background">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_toLeftOf="@+id/textSearch"
+                android:padding="6dp"
+                android:paddingRight="5dp"
+                android:src="@mipmap/search_light_icon" />
+
+            <TextView
+                android:id="@+id/textSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="搜索"
+                android:textSize="16dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/search_bar"
+        android:layout_below="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="20dp"
+            android:text="取消"
+            android:textColor="@color/blueColor"
+            android:textSize="@dimen/text_size_16_sp" />
+
+        <EditText
+            android:id="@+id/search_text"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_toLeftOf="@id/search_button"
+            android:background="@drawable/shape_grey_solid_r6_bg"
+            android:hint="输入名称"
+            android:maxEms="1"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:paddingLeft="34dp"
+            android:paddingRight="20dp"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/light_grey"
+            android:textSize="@dimen/text_size_15_sp" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="14dp"
+            android:src="@mipmap/search_icon" />
+
+        <ImageView
+            android:id="@+id/clear_button"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/search_button"
+            android:padding="8dp"
+            android:src="@mipmap/fork_icon"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchR" />
+
+    <com.wetoop.ecard.ui.widget.listview.LetterListView
+        android:id="@+id/letterView"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/label"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="50dp" />
+
+</RelativeLayout>

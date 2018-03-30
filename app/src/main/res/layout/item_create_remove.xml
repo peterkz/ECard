@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/remove_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:padding="11dp"
+        android:src="@mipmap/collect_delete_icon" />
+
+    <TextView
+        android:id="@+id/label_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/remove_button"
+        android:text="label"
+        android:textColor="@color/light_grey"
+        android:textSize="@dimen/text_size_15_sp" />
+
+    <EditText
+        android:id="@+id/item_value_input_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@null"
+        android:hint="hint text"
+        android:minWidth="100dp"
+        android:textColorHint="@color/deep_light_grey"
+        android:textSize="@dimen/text_size_15_sp" />
+
+    <View
+        android:id="@id/short_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:background="@color/line_gray" />
+
+    <View
+        android:id="@+id/long_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/line_gray"
+        android:visibility="gone" />
+
+</RelativeLayout>

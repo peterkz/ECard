@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/to_search_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="14dp"
+                android:src="@mipmap/search_icon" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="我的e卡"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/text_size_18_sp" />
+
+            <ImageView
+                android:id="@+id/more_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="13dp"
+                android:paddingRight="15dp"
+                android:src="@drawable/default_more_icon" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/search_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="20dp"
+                android:text="取消"
+                android:textColor="@color/blueColor"
+                android:textSize="@dimen/text_size_16_sp" />
+
+            <EditText
+                android:id="@+id/search_text"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_toLeftOf="@id/search_button"
+                android:background="@drawable/shape_grey_solid_r6_bg"
+                android:hint="输入e卡名称或姓名"
+                android:maxEms="1"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:paddingLeft="34dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/grey"
+                android:textColorHint="@color/light_grey"
+                android:textSize="@dimen/text_size_15_sp" />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="14dp"
+                android:src="@mipmap/search_icon" />
+
+            <ImageView
+                android:id="@+id/clear_button"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/search_button"
+                android:padding="8dp"
+                android:src="@mipmap/fork_icon"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_title_bar_bottom_line" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <cn.edots.nest.ui.widget.SwipeRefreshLayout
+
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <cn.edots.nest.ui.widget.VerticalRecyclerView
+                android:id="@+id/recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </cn.edots.nest.ui.widget.SwipeRefreshLayout>
+
+        <RelativeLayout
+            android:id="@+id/empty_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/icon_view"
+                android:layout_width="180dp"
+                android:layout_height="90dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:src="@mipmap/empty_ecard_icon" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击右下角"
+                    android:textColor="@color/grey" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="按钮"
+                    android:textColor="@color/blueColor"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="创建你的第一张名片"
+                    android:textColor="@color/grey" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

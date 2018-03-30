@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customs="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray">
+
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:layout_below="@+id/label"
+        customs:auto_cycle="true"
+        customs:indicator_visibility="visible"
+        customs:pager_animation="Accordion"
+        customs:pager_animation_span="1100" />
+    <TextView
+        android:id="@+id/noData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="暂无数据"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/text_size_16_sp"
+        android:visibility="gone"
+        android:layout_below="@+id/cancel_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="84dp" />
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/slider"
+        android:layout_marginBottom="60dp"
+        android:background="@color/background_gray"
+        android:columnWidth="100dp"
+        android:gravity="center"
+        android:horizontalSpacing="1px"
+        android:numColumns="4"
+        android:paddingBottom="1px"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="1px" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#F64557"
+        android:text="退出编辑"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_14_sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

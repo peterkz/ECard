@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+
+        <ImageView
+            android:id="@+id/remove_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:padding="11dp"
+            android:src="@mipmap/collect_delete_icon" />
+
+        <TextView
+            android:id="@+id/label_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/remove_button"
+            android:text="label"
+            android:textColor="@color/light_grey"
+            android:textSize="@dimen/text_size_15_sp" />
+
+        <TextView
+            android:id="@+id/address_select_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:minWidth="100dp"
+            android:text="省 - 市 - 区"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_size_15_sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/middle_short_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="36dp"
+        android:background="@color/line_gray" />
+
+    <View
+        android:id="@+id/middle_long_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="18dp"
+        android:background="@color/line_gray"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/item_value_input_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:background="@null"
+        android:hint="请输入详细地址"
+        android:minHeight="46dp"
+        android:minWidth="100dp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/deep_light_grey"
+        android:textSize="@dimen/text_size_15_sp" />
+
+    <View
+        android:id="@id/short_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:background="@color/line_gray" />
+
+    <View
+        android:id="@+id/long_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/line_gray"
+        android:visibility="gone" />
+
+</LinearLayout>

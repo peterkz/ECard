@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">e卡</string>
+    <string name="tab1">我的e卡</string>
+    <string name="tab2">联系人</string>
+    <string name="tab3">发现</string>
+    <string name="tab4">收藏</string>
+    <string name="recordsReceive">收到的e卡</string>
+    <string name="recordsSend">发送的e卡</string>
+    <string name="syHeader">　　同步后会将手机通讯录联系人添加至e卡联系人，同时e卡联系人同步至手机通讯录，系统会根据e卡账号匹配手机联系人中的手机号码，相同的合并，并以e卡中的信息作为主显示，其他信息保存在备注中。</string>
+    <string name="syFooter">　　同步有可能导致通讯录信息丢失或被合并及删除，由此产生的风险和责任用户自行承担。</string>
+</resources>

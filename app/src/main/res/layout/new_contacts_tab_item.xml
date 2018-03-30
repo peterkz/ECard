@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="@color/white">
+    <ImageView
+        android:id="@+id/eCardPhoto"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/norm_avatar_icon"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"/>
+
+    <RelativeLayout
+        android:layout_toRightOf="@+id/eCardPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        >
+        <TextView
+            android:id="@+id/contactsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="名字"/>
+        <TextView
+            android:id="@+id/contactsMessage"
+            android:layout_below="@+id/contactsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:textSize="10dp"
+            android:text="名字"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_centerVertical="true">
+    <TextView
+        android:id="@+id/saveECard"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:background="@drawable/save_card_background"
+        android:text="保存" />
+    <!--<TextView
+        android:id="@+id/recordsState"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:text="已保存" />-->
+    </RelativeLayout>
+</RelativeLayout>

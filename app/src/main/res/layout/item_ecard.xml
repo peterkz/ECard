@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="16dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="16dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp"
+    app:contentPadding="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        android:paddingLeft="22dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/label_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_blue_solid_blr6_brr6_bg"
+            android:paddingBottom="3dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="3dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12_sp" />
+
+        <ImageView
+            android:id="@+id/qrcode_button"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="40dp"
+            android:src="@mipmap/myecard_qrcode" />
+
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/position_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/name_text"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#767676"
+            android:textSize="@dimen/text_size_13_sp" />
+
+        <TextView
+            android:id="@+id/company_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/position_text"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="14dp"
+            android:textColor="#494949"
+            android:textSize="@dimen/text_size_13_sp" />
+
+        <TextView
+            android:id="@+id/phone_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/company_text"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#767676"
+            android:textSize="@dimen/text_size_13_sp" />
+
+        <TextView
+            android:id="@+id/email_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/phone_text"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="6dp"
+            android:textSize="@dimen/text_size_13_sp" />
+
+        <TextView
+            android:id="@+id/address_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/email_text"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="6dp"
+            android:textSize="@dimen/text_size_13_sp" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

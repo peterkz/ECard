@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="6dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="6dp">
+
+    <View
+        android:id="@+id/tag_view"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/shape_red_circle_solid_r15" />
+
+    <TextView
+        android:id="@+id/tag_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/tag_view"
+        android:text="广西"
+        android:textColor="@color/deep_grey"
+        android:textSize="@dimen/text_size_16_sp" />
+
+</RelativeLayout>

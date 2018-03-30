@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/ECard.iml" filepath="$PROJECT_DIR$/.idea/ECard.iml" />
+      <module fileurl="file://H:\GitProject\ECard\ECard.iml" filepath="H:\GitProject\ECard\ECard.iml" />
+      <module fileurl="file://P:\Project\Client\ECard\E_Card.iml" filepath="P:\Project\Client\ECard\E_Card.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

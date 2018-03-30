@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="66dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginLeft="15dp"
+        android:padding="5dp"
+        android:src="@mipmap/default_avatar_icon" />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/item_image"
+        android:text="微信"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/text_size_16_sp" />
+
+    <TextView
+        android:id="@+id/unread_tag"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="42dp"
+        android:background="@drawable/shape_red_circle_solid_r15"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_14_sp"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/item_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignLeft="@id/item_name"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/right_image"
+        android:background="@color/line_gray" />
+
+</RelativeLayout>

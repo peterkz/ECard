@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/contactClickR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchR">
+
+        <RelativeLayout
+            android:id="@+id/newContact"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/contact_back_background">
+
+            <ImageView
+                android:id="@+id/newContactImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:src="@mipmap/new_contact" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/newContactImage"
+                android:text="新的联系人"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/text_size_16_sp" />
+
+            <TextView
+                android:id="@+id/unread_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/shape_red_circle_solid_r15"
+                android:gravity="center"
+                android:minWidth="20dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_13_sp"
+                android:visibility="gone" />
+
+            <!--<View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/newContactImage"
+                android:background="@color/line_gray" />-->
+        </RelativeLayout>
+
+        <!--<RelativeLayout
+            android:id="@+id/synchronization"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_below="@+id/newContact"
+            android:background="@drawable/contact_back_background">
+
+            <ImageView
+                android:id="@+id/synchronizationImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:src="@mipmap/synchronization" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/synchronizationImage"
+                android:text="同步手机通讯录与联系人"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/text_size_16_sp" />
+        </RelativeLayout>-->
+    </RelativeLayout>
+</LinearLayout>

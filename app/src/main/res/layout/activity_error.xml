@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="80dp"
+        android:src="@mipmap/error_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="不好意思，出了一点小状况！"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/text_size_16_sp" />
+
+    <Button
+        android:id="@+id/refresh_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/shape_blue_solid_r20"
+        android:text="刷新"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16_sp" />
+
+</LinearLayout>
